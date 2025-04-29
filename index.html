@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Galaxy S24 FE (Renewed) | TOP-NOTCH-TECH</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #4285f4;
+            --accent-color: #fbbc05;
+            --text-color: #333;
+            --light-gray: #f8f9fa;
+            --dark-gray: #70757a;
+            --white: #fff;
+            --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--light-gray);
+        }
+
+        header {
+            background-color: var(--white);
+            box-shadow: var(--box-shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 5%;
+        }
+
+        .product-hero {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-image {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .product-image img:hover {
+            transform: scale(1.02);
+        }
+
+        .product-info {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .product-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .seller {
+            font-weight: 500;
+            color: var(--dark-gray);
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+
+        .buy-btn {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: var(--transition);
+            margin-top: 1rem;
+            align-self: flex-start;
+        }
+
+        .buy-btn:hover {
+            background-color: #e3a700;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature-card {
+            flex: 1;
+            min-width: 250px;
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 3rem;
+            background-color: var(--white);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+        }
+
+        .specs-table th, .specs-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .specs-table th {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .specs-table tr:nth-child(even) {
+            background-color: rgba(66, 133, 244, 0.05);
+        }
+
+        .specs-table tr:hover {
+            background-color: rgba(66, 133, 244, 0.1);
+        }
+
+        .reviews {
+            margin-bottom: 3rem;
+        }
+
+        .review-card {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+
+        .review-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .reviewer {
+            font-weight: 600;
+        }
+
+        .stars {
+            color: var(--accent-color);
+        }
+
+        .charts-section {
+            margin-bottom: 3rem;
+        }
+
+        .charts-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .chart-container {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--box-shadow);
+        }
+
+        .chart-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        canvas {
+            width: 100%;
+            height: 250px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 2rem 5%;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .copyright {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Image gallery */
+        .gallery-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .gallery {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .gallery-nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+        }
+
+        .gallery-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .gallery-dot.active {
+            background-color: var(--white);
+            transform: scale(1.2);
+        }
+
+        .gallery-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            color: var(--text-color);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .gallery-btn:hover {
+            background-color: var(--white);
+        }
+
+        .prev-btn {
+            left: 15px;
+        }
+
+        .next-btn {
+            right: 15px;
+        }
+
+        /* Battery chart animation */
+        .battery-container {
+            width: 100%;
+            height: 30px;
+            background-color: #eee;
+            border-radius: 15px;
+            margin: 1rem 0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .battery-level {
+            height: 100%;
+            width: 0;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+            border-radius: 15px;
+            transition: width 1.5s ease-in-out;
+        }
+
+        .battery-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: var(--text-color);
+            font-weight: 600;
+            text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                padding: 1rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .product-hero {
+                flex-direction: column;
+            }
+
+            .product-image, .product-info {
+                width: 100%;
+            }
+
+            .product-title {
+                font-size: 2rem;
+            }
+
+            .feature-card {
+                min-width: 100%;
+            }
+
+            .chart-container {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">TOP-NOTCH-TECH</div>
+            <div class="nav-links" id="navLinks">
+                <a href="#features">Features</a>
+                <a href="#specifications">Specifications</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#comparison">Comparison</a>
+            </div>
+            <button class="hamburger" id="hamburger">☰</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="product-hero">
+            <div class="product-image">
+                <div class="gallery-container">
+                    <div class="gallery" id="gallery">
+                        <img src="https://m.media-amazon.com/images/I/61uakkLoHxL._AC_SL1500.jpg" alt="Samsung Galaxy S24 FE Front">
+                        <img src="https://m.media-amazon.com/images/I/31xHeRMG+mL._AC_SL1500.jpg" alt="Samsung Galaxy S24 FE Back">
+                        <img src="https://m.media-amazon.com/images/I/41StyE1kssL._AC_SL1500.jpg" alt="Samsung Galaxy S24 FE Side">
+                    </div>
+                    <div class="gallery-nav" id="galleryNav"></div>
+                    <button class="gallery-btn prev-btn" id="prevBtn">&#10094;</button>
+                    <button class="gallery-btn next-btn" id="nextBtn">&#10095;</button>
+                </div>
+            </div>
+            <div class="product-info">
+                <h1 class="product-title">Samsung Galaxy S24 FE (Renewed)</h1>
+                <p class="seller">Sold by: TOP-NOTCH-TECH</p>
+                <p class="price">$499.43</p>
+                <div class="rating">
+                    <span class="stars">★★★★☆</span>
+                    <span>(3.8/5 based on 35 reviews)</span>
+                </div>
+                <p>Experience the power of Samsung's latest Fan Edition smartphone. The Galaxy S24 FE combines premium features with exceptional value, featuring a stunning 6.7" Dynamic AMOLED display, powerful Exynos 2400e processor, and versatile camera system.</p>
+                <a href="https://www.amazon.com/SAMSUNG-Galaxy-S24-FE-Smartphone/dp/B0DQR1HKBR" target="_blank">
+                    <button class="buy-btn">Buy Now on Amazon</button>
+                </a>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Stunning Display</h3>
+                    <p>6.7" Dynamic AMOLED 2X FHD+ display with 120Hz Adaptive Refresh Rate and 1900nits peak brightness for exceptional clarity even in direct sunlight.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔋</div>
+                    <h3 class="feature-title">All-Day Battery</h3>
+                    <p>Powerful 4700mAh battery that keeps you going all day long with intelligent power management features.</p>
+                    <div class="battery-container">
+                        <div class="battery-level" id="batteryLevel"></div>
+                        <div class="battery-text">4700mAh</div>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📸</div>
+                    <h3 class="feature-title">Professional Camera System</h3>
+                    <p>Triple rear camera setup with 50MP main camera, 12MP ultrawide, and 8MP telephoto with 3x optical zoom for professional-quality photos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="specifications" class="specs-section">
+            <h2 class="section-title">Specifications</h2>
+            <table class="specs-table">
+                <tr>
+                    <th>Category</th>
+                    <th>Specification</th>
+                </tr>
+                <tr>
+                    <td>Display</td>
+                    <td>6.7" Dynamic AMOLED 2X FHD+ (1080 x 2340px), 120Hz Adaptive Refresh Rate, 1900nits Peak brightness</td>
+                </tr>
+                <tr>
+                    <td>Processor</td>
+                    <td>Exynos 2400e (4nm), 10-core CPU, Xclipse 940 GPU</td>
+                </tr>
+                <tr>
+                    <td>Memory</td>
+                    <td>8GB RAM, 128GB Storage (No SD Card Slot)</td>
+                </tr>
+                <tr>
+                    <td>Battery</td>
+                    <td>4700mAh</td>
+                </tr>
+                <tr>
+                    <td>Operating System</td>
+                    <td>Android 14, One UI 6.1</td>
+                </tr>
+                <tr>
+                    <td>Rear Camera</td>
+                    <td>50MP, f/1.8 (wide) + 12MP, f/2.2 (ultrawide) + 8MP, f/2.4 (telephoto), 3x Optical Zoom</td>
+                </tr>
+                <tr>
+                    <td>Front Camera</td>
+                    <td>10MP, f/2.4</td>
+                </tr>
+                <tr>
+                    <td>Connectivity</td>
+                    <td>Bluetooth 5.3, Wi-Fi 6E, NFC, USB Type-C</td>
+                </tr>
+                <tr>
+                    <td>Dimensions</td>
+                    <td>162 x 77.9 x 8 mm</td>
+                </tr>
+                <tr>
+                    <td>Weight</td>
+                    <td>213g</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="comparison" class="charts-section">
+            <h2 class="section-title">Performance Comparison</h2>
+            <div class="charts-container">
+                <div class="chart-container">
+                    <h3 class="chart-title">Battery Life Comparison</h3>
+                    <canvas id="batteryChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3 class="chart-title">Performance Benchmark</h3>
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <h2 class="section-title">Top Customer Reviews</h2>
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer">Jervis Garfield</span>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <p>Both phones came in good condition. All features worked as expected and items are sold at good price.Shipping took a little longer than usual, but understandable due to current weather conditions.  Very happy with phones!</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer">Lauren Robertson</span>
+                    <span class="stars">★★★★★</span>
+                </div>
+                <p>I got my galaxy24 fe, for about 400 , renewed, came just about perfect works great. Would definitely do it again great way to get a top tier phone without breaking the bank. No issues with my mint mobil sim card transfer either.</p>
+            </div>
+            <div class="review-card">
+                <div class="review-header">
+                    <span class="reviewer">HAROLD Sanders</span>
+                    <span class="stars">★☆☆☆☆</span>
+                </div>
+                <p>I received the phone dented and scratches on the edges. I had a problem connecting to the network. And had a problem getting the address to send the phone back. I have not received a refund yet.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">TOP-NOTCH-TECH</div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <p class="copyright">© 2023 TOP-NOTCH-TECH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Image Gallery
+        const gallery = document.getElementById('gallery');
+        const galleryNav = document.getElementById('galleryNav');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const images = gallery.querySelectorAll('img');
+        let currentIndex = 0;
+
+        // Create navigation dots
+        images.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('gallery-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateGallery();
+            });
+            galleryNav.appendChild(dot);
+        });
+
+        // Navigation buttons
+        prevBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateGallery();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateGallery();
+        });
+
+        function updateGallery() {
+            gallery.style.transform = `translateX(-${currentIndex * 100}%)`;
+            const dots = galleryNav.querySelectorAll('.gallery-dot');
+            dots.forEach((dot, index) => {
+                if (index === currentIndex) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        // Auto slide gallery
+        let galleryInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateGallery();
+        }, 5000);
+
+        // Pause auto slide on hover
+        gallery.addEventListener('mouseenter', () => {
+            clearInterval(galleryInterval);
+        });
+
+        gallery.addEventListener('mouseleave', () => {
+            galleryInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateGallery();
+            }, 5000);
+        });
+
+        // Battery animation
+        const batteryLevel = document.getElementById('batteryLevel');
+        setTimeout(() => {
+            batteryLevel.style.width = '85%';
+        }, 500);
+
+        // Charts
+        function createBatteryChart() {
+            const ctx = document.getElementById('batteryChart').getContext('2d');
+            
+            // Draw battery comparison chart
+            ctx.fillStyle = '#f8f9fa';
+            ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+            
+            const phones = ['S24 FE', 'Pixel 8', 'iPhone 15'];
+            const batteryCapacity = [4700, 4500, 3877];
+            const barWidth = 60;
+            const spacing = 40;
+            const maxCapacity = 5000;
+            const startX = 50;
+            const startY = 200;
+            
+            // Draw axes
+            ctx.beginPath();
+            ctx.moveTo(startX, 30);
+            ctx.lineTo(startX, startY);
+            ctx.lineTo(startX + (phones.length * (barWidth + spacing)), startY);
+            ctx.strokeStyle = '#333';
+            ctx.stroke();
+            
+            // Draw title
+            ctx.font = 'bold 16px Arial';
+            ctx.fillStyle = '#333';
+            ctx.textAlign = 'center';
+            ctx.fillText('Battery Capacity (mAh)', ctx.canvas.width / 2, 20);
+            
+            // Draw y-axis labels
+            ctx.font = '12px Arial';
+            ctx.textAlign = 'right';
+            for (let i = 0; i <= 5; i++) {
+                const y = startY - (i * (startY - 30) / 5);
+                const value = (i * maxCapacity / 5);
+                ctx.fillText(value, startX - 5, y + 5);
+                
+                // Draw horizontal grid line
+                ctx.beginPath();
+                ctx.moveTo(startX, y);
+                ctx.lineTo(startX + (phones.length * (barWidth + spacing)), y);
+                ctx.strokeStyle = '#e0e0e0';
+                ctx.stroke();
+            }
+            
+            // Draw bars
+            phones.forEach((phone, i) => {
+                const x = startX + (i * (barWidth + spacing)) + spacing/2;
+                const barHeight = (batteryCapacity[i] / maxCapacity) * (startY - 30);
+                
+                // Draw bar
+                const gradient = ctx.createLinearGradient(x, startY - barHeight, x, startY);
+                gradient.addColorStop(0, '#1a73e8');
+                gradient.addColorStop(1, '#4285f4');
+                
+                ctx.fillStyle = gradient;
+                ctx.fillRect(x, startY - barHeight, barWidth, barHeight);
+                
+                // Draw value on top of bar
+                ctx.font = 'bold 12px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillStyle = '#333';
+                ctx.fillText(batteryCapacity[i], x + barWidth/2, startY - barHeight - 5);
+                
+                // Draw label below bar
+                ctx.fillText(phone, x + barWidth/2, startY + 20);
+            });
+        }
+
+        function createPerformanceChart() {
+            const ctx = document.getElementById('performanceChart').getContext('2d');
+            
+            // Draw performance radar chart
+            ctx.fillStyle = '#f8f9fa';
+            ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+            
+            const centerX = ctx.canvas.width / 2;
+            const centerY = ctx.canvas.height / 2;
+            const radius = Math.min(centerX, centerY) - 30;
+            
+            const categories = ['CPU', 'GPU', 'RAM', 'Storage', 'Display'];
+            const scores = [85, 80, 78, 75, 90]; // Out of 100
+            const angles = [];
+            
+            // Calculate angles for each category
+            for (let i = 0; i < categories.length; i++) {
+                angles.push((Math.PI * 2 * i) / categories.length - Math.PI / 2);
+            }
+            
+            // Draw radar background
+            for (let level = 1; level <= 5; level++) {
+                const levelRadius = radius * (level / 5);
+                
+                ctx.beginPath();
+                for (let i = 0; i <= categories.length; i++) {
+                    const angle = angles[i % categories.length];
+                    if (i === 0) {
+                        ctx.moveTo(centerX + levelRadius * Math.cos(angle), centerY + levelRadius * Math.sin(angle));
+                    } else {
+                        ctx.lineTo(centerX + levelRadius * Math.cos(angle), centerY + levelRadius * Math.sin(angle));
+                    }
+                }
+                ctx.strokeStyle = '#e0e0e0';
+                ctx.stroke();
+            }
+            
+            // Draw category lines
+            for (let i = 0; i < categories.length; i++) {
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                const angle = angles[i];
+                ctx.lineTo(centerX + radius * Math.cos(angle), centerY + radius * Math.sin(angle));
+                ctx.strokeStyle = '#e0e0e0';
+                ctx.stroke();
+                
+                // Draw category labels
+                ctx.font = 'bold 12px Arial';
+                ctx.fillStyle = '#333';
+                ctx.textAlign = 'center';
+                const labelX = centerX + (radius + 15) * Math.cos(angle);
+                const labelY = centerY + (radius + 15) * Math.sin(angle);
+                ctx.fillText(categories[i], labelX, labelY);
+            }
+            
+            // Draw data
+            ctx.beginPath();
+            for (let i = 0; i <= categories.length; i++) {
+                const score = scores[i % categories.length];
+                const scoreRadius = radius * (score / 100);
+                const angle = angles[i % categories.length];
+                
+                if (i === 0) {
+                    ctx.moveTo(centerX + scoreRadius * Math.cos(angle), centerY + scoreRadius * Math.sin(angle));
+                } else {
+                    ctx.lineTo(centerX + scoreRadius * Math.cos(angle), centerY + scoreRadius * Math.sin(angle));
+                }
+            }
+            ctx.fillStyle = 'rgba(66, 133, 244, 0.3)';
+            ctx.fill();
+            ctx.strokeStyle = '#1a73e8';
+            ctx.lineWidth = 2;
+            ctx.stroke();
+            
+            // Call chart functions
+            createBatteryChart();
+            createPerformanceChart();
+        }
+
+        // Call chart functions
+        createBatteryChart();
+        createPerformanceChart();
+    </script>
+</body>
+</html>
